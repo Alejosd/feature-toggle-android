@@ -24,15 +24,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-   // String API = "http://10.0.2.2:8080";
-String API = "https://featuretoggle.herokuapp.com";
+String API = "https://featuretogglejava.herokuapp.com";
     public void sendMessage(View view) {
-        listMessages();
-       // messageView("ALEJANDRO SIERRA Duran");
+        getMessages();
     }
 
 
-    public void listMessages(){
+    public void getMessages(){
 
         MessageRest messageRest = new MessageRest(API);
         Call<Message> call = messageRest.message();

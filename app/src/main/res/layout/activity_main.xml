@@ -25,7 +25,7 @@
         android:text="Message Feature Toggle"
         android:id="@+id/button"
         android:layout_marginTop="81dp"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/optionText"
         android:layout_centerHorizontal="true"
         android:onClick="sendMessage" />
 

@@ -5,6 +5,7 @@ import com.tumblr.alejosd5.featuretoggle.api.IMessage;
 import java.util.List;
 
 import models.Message;
+import models.User;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -25,10 +26,10 @@ public class MessageRest {
                 .build();
     }
 
-    public Call<Message> message(){
+    public Call<Message> message(User user){
 
         IMessage service = retrofit.create(IMessage.class);
-        return service.message();
+        return service.message(user.getUsername(),user.getNumberPhone());
 
     }
 

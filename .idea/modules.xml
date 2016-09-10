@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FeatureToggle.iml" filepath="$PROJECT_DIR$/FeatureToggle.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-toggle-android.iml" filepath="$PROJECT_DIR$/feature-toggle-android.iml" />
     </modules>
   </component>
 </project>

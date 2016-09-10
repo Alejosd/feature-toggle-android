@@ -5,6 +5,7 @@ import java.util.List;
 import models.Message;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 /**
  * Created by asierrdu on 16-08-2016.
@@ -12,5 +13,8 @@ import retrofit2.http.GET;
 public interface IMessage {
 
     @GET("/")
-    Call<Message> message();
+    Call<Message> message(
+            @Query("user") String user,
+            @Query("numberPhone") String numberPhone
+    );
 }
